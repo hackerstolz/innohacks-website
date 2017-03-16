@@ -1,0 +1,585 @@
+/* ---- BASE ELEMENTS ---- */
+
+@font-face {
+    font-family: AbadiLight;
+    src: url('fonts/Abadi MT Condensed Light Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: AbadiBold;
+    src: url('fonts/Abadi MT Condensed Extra Bold Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    font-size: 350%;
+    font-family: AbadiLight;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 250%;
+}
+
+h2 {
+    font-size: 150%;
+    margin: 0 0 40px;
+}
+
+h3 {
+    font-size: 120%;
+    margin: 0 0 30px;
+}
+
+.left-block {
+    display: inline-block;
+    text-align: left;
+}
+
+strong {
+    font-weight: normal;
+    font-family: AbadiBold;
+    color: #FEDC4A;
+}
+
+.yellow-container {
+    background-color: #FEDC4A;
+    color: black;
+}
+
+.centered {
+    text-align: center;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.medium {
+    font-size: 85%;
+}
+
+.small {
+    font-size: 70%;
+}
+
+.smaller {
+    font-size: 60%;
+    vertical-align: baseline;
+}
+
+.left-aligned {
+    text-align: left;
+}
+
+.black-tri-top, .black-tri-bottom {
+    position: relative;
+}
+
+.black-tri-top::before, .black-tri-bottom::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+.black-tri-top::before {
+    top: 0;
+    left: 0;
+    border-width: 50px 2560px 0 0;
+    border-color: #000000 transparent transparent transparent;
+}
+
+.black-tri-bottom::after {
+    bottom: 0;
+    left: 0;
+    border-width: 0 2560px 50px 0px;
+    border-color: transparent transparent #000000 transparent;
+}
+
+.white-tri-top::before {
+    border-color: #FFFFFF transparent transparent transparent;
+}
+
+.white-tri-bottom::after {
+    border-color: transparent transparent #FFFFFF transparent;
+}
+
+.tilt-on-hover {
+    -webkit-transition: -webkit-transform .2s ease-in-out;
+    transition: transform .2s ease-in-out;
+}
+
+.tilt-on-hover:hover {
+    opacity: 0.9;
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg);
+}
+
+.icon-and-text {
+    text-decoration: none !important;
+    text-align: justify;
+    color: inherit;
+    vertical-align: top;
+}
+
+.icon-and-text img {
+    display: block;
+    width: 100%;
+    margin-bottom: 25px !important;
+}
+
+img.shortened {
+    width: 70% !important;
+    margin: 0 auto;
+}
+
+/* ---- ROWS ---- */
+
+#badge {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    line-height: 0;
+    z-index: 5;
+}
+
+#badge img {
+    height: 15vw;
+    max-height: 400px;
+}
+
+#content-container {
+    overflow: hidden;
+    padding: 0;
+}
+
+#content-container > div {
+    padding: 40px 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+}
+
+#content-container > div.black-tri-top, #content-container > div.black-tri-bottom {
+    padding: 100px 0 120px 0;
+}
+
+#title-container {
+    padding: 10vh 0 25vh;
+    background-image: url("images/dhbw.jpg");
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+#title-container h1 {
+    line-height: 90%;
+}
+
+#title-container .title-block {
+    display: inline-block; 
+    background: -moz-linear-gradient(left, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.75) 50%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(0,0,0,0.75) 0%,rgba(0,0,0,0.75) 50%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(0,0,0,0.75) 0%,rgba(0,0,0,0.75) 50%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */    
+    color: white; 
+    padding: 10px 25px; 
+    width: 45vw; 
+    margin-left: 7vw;
+}
+
+#title-container #subtitle {
+    display: block;
+    font-size: 90%;
+}
+
+#title-container #logo {
+    font-size: 45%;
+    margin-top: 40px;
+}
+
+#title-container #logo img {
+    width: 140px;
+}
+
+#title-container #bulb {
+    width: 60%;
+    display: inline-block;
+}
+
+#countdown-container #timer {
+    padding-top: 25px;
+    display: inline-block;
+    font-size: 250%;
+    line-height: 80%;
+    color: #000000;
+    font-family: 'Courier New';
+}
+
+#countdown-container #timer tr:first-child td {
+    padding: 0 25px;
+}
+
+#countdown-container #timer tr:nth-child(2) td {
+    font-size: 40%;
+}
+
+#description-container {
+    margin-top: 30px !important;
+    margin-bottom: 50px !important;
+}
+
+#description-container #description {
+    width: 70%;
+    color: lightgray;
+}
+
+#description-container #definition {
+    margin: 15px 20px;
+}
+
+#dhbw-container h3 {
+    font-size: 200%;
+    margin: 0;
+}
+
+#dhbw-container .topBanner {
+    margin: 7% 0% 0% 5%;
+    background-color: #FEDC4A;
+    display: inline-block;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+}
+
+#dhbw-container .bottomBanner {
+    margin: 0% 0% 6% 5%;
+    background-color: #FEDC4A;
+    display: inline-block;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+}
+
+#info-container table {
+    display: inline-block;
+}
+
+#info-container table td {
+    line-height: 120%;
+    padding: 5px 0;
+    vertical-align: top;
+}
+
+#info-container table td:first-child {
+    text-align: right;
+    padding-right: 8px;
+}
+
+#info-container table td:nth-child(2) {
+    text-align: left;
+}
+
+#info-container #register-button {
+    display: inline-block;
+    color: black;
+    font-weight: bold;
+    background-color: #FFC000;
+    padding: 8px 30px;
+    border-radius: 30px 0 30px 0;
+}
+
+#info-container #register-button:hover {
+    text-decoration: none;
+}
+
+#time-container .title-row {
+    display: block;
+    background-color: rgba(255, 255, 255, 0.21);
+    border: 1px solid #636363;
+    border-width: 1px 0;
+    margin-bottom: 3px;
+    color: #dadada;
+}
+
+#time-container .row-text {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#time-container .material-icons {
+    vertical-align: sub;
+    margin-right: 5px;
+}
+
+#mentor-container a {
+    display: inline-block;
+    width: 320px;
+    margin: 40px 60px;
+}
+
+#mentor-container strong {
+    color: inherit;
+}
+
+#sponsor-container {
+    background-color: white;
+    color: black;
+}
+
+#sponsor-container a {
+    display: inline-block;
+    width: 100px;
+    margin: 25px 40px;
+    vertical-align: middle;
+}
+
+#sponsor-container a.s1 {
+    width: 450px;
+}
+
+#sponsor-container a.s2 {
+    width: 300px;
+}
+
+#sponsor-container a.s3 {
+    width: 200px;
+}
+
+#sponsor-container img {
+    display: block;
+    width: 100%;
+}
+
+#sponsor-container .sponsor-space {
+    display: block;
+    height: 60px;
+}
+
+#sponsor-container #sponsorUs {
+    margin: 60px 40px -30px;
+}
+
+#prize-container div {
+    display: inline-block;
+    width: 200px;
+    text-decoration: none;
+    margin: 30px 50px;
+}
+
+#prize-container div img {
+    display: block;
+}
+
+#jury-container a {
+    display: inline-block;
+    width: 320px;
+    margin: 40px 60px;
+}
+
+#team-container a {
+    display: inline-block;
+    width: 160px;
+    color: #505050; /*#BFBFBF;*/
+    text-decoration: none;
+    margin: 30px 50px;
+}
+
+#team-container a.core-team {
+    width: 180px;
+}
+
+#team-container a img {
+    display: block;
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 2px solid #454545;
+}
+
+#footer {
+    font-size: 14px;
+}
+
+#footer a {
+    color: white;
+}
+
+#footer #social-container img {
+    height: 50px;
+    margin: 30px 15px;
+}
+
+/* ---- MOBILE ---- */
+
+@media (max-width: 1024px) {
+
+    #badge img {
+        height: 22vw;
+    }
+    
+    #description-container #description {
+        width: 75%;
+    }
+
+    #title-container #bulb {
+        width: 80%;
+    }
+
+    #title-container .title-block {
+        width: 75vw;
+    }
+
+    #dhbw-container h3 {
+        font-size: 150%;
+        margin: 0;
+    }
+}
+
+@media (max-width: 600px) {
+
+    #badge img {
+        height: 25vw;
+    }
+    
+    body {
+        font-size: 280%;
+    }
+
+    .medium {
+        font-size: 100%;
+    }
+    
+    .small {
+        font-size: 80%;
+    }
+    
+    .smaller {
+        font-size: 70%;
+    }
+
+    #content-container > div.black-tri-top, #content-container > div.black-tri-bottom {
+        padding: 130px 0 150px 0;
+    }
+    
+    #title-container #logo img {
+        width: 110px;
+    }
+
+    #countdown-container #timer {
+        font-size: 190%;
+    }
+
+    #countdown-container #timer tr:first-child td {
+        padding: 0 10px;
+    }
+
+    #description-container #description {
+        width: 90%;
+    }
+
+    #dhbw-container h3 {
+        font-size: 130%;
+        margin: 0;
+    }
+    
+    #info-container #register-button {
+        border-radius: 20px 0 20px 0;
+    }
+
+    #sponsor-container a.s1 {
+        width: 250px;
+    }
+    
+    #sponsor-container a.s2 {
+        width: 170px;
+    }
+    
+    #sponsor-container a.s3 {
+        width: 110px;
+    }
+
+    #jury-container a {
+        display: inline-block;
+        width: 250px;
+        margin: 20px 20px;
+    }
+
+    #team-container a {
+        width: 130px;
+        margin: 20px 35px;
+    }
+
+    #team-container a.core-team {
+        width: 150px;
+    }
+
+}
+
+@media (max-width: 400px) {
+
+    #badge img {
+        height: 30vw;
+    }
+    
+    body {
+        font-size: 230%;
+    }
+
+    h1 {
+        font-size: 200%;
+    }
+
+    #dhbw-container h3 {
+        font-size: 110%;
+        margin: 0;
+    }
+
+    #title-container #bulb {
+        width: 100%;
+    }
+    
+    #title-container .title-block {
+        padding-top: 5px;
+    }
+
+    #dhbw-container div {
+        padding-right: 0.5em;
+    }
+
+}
+
+/* Icons */
+.icon-love {
+    vertical-align: text-top;
+    color: crimson;
+    font-size: 14px;
+}
+
+/* Mailchimp form */
+.mce-EMAIL-label {
+    padding-right: 25px;
+}
+
+#mce-EMAIL {
+    width: 500px;
+}
+
+@media (max-width: 767px) {
+    #mce-EMAIL {
+        width: 100%;
+    }
+
+    #mc-embedded-subscribe {
+        margin-top: 15px;
+    }
+}
