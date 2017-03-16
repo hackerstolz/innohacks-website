@@ -1,0 +1,28 @@
+{
+  "name": "innohacks-website",
+  "version": "1.0.0",
+  "description": "Inno{Hacks} 2017",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hackerstolz/innohacks-website.git"
+  },
+  "author": "Manuel Rauber <manuel.rauber@hackerstolz.de>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hackerstolz/innohacks-website/issues"
+  },
+  "homepage": "https://github.com/hackerstolz/innohacks-website#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-watch": "^4.3.11",
+    "include-media": "^1.4.9",
+    "run-sequence": "^1.2.2"
+  }
+}

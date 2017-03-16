@@ -1,0 +1,54 @@
+@import '_utilities';
+@import 'roboto/roboto';
+@import '_rectangles';
+
+* {
+  box-sizing: content-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: white;
+  color: $background-color;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+
+.logo {
+  max-width: 500px;
+}
+
+.bg-black {
+  background-color: $background-color;
+}
+
+.first-triangle {
+  background: linear-gradient($background-color 0%, $background-color 30%, white 30%, white 100%);
+}
+
+.footer {
+  display: flex;
+  padding: 0 $gap;
+  font-size: 1rem;
+
+  justify-content: space-between;
+  align-items: center;
+
+  img {
+    max-height: 50px;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $background-color;
+}
+
+.teaser {
+  h1 {
+    font-weight: normal;
+    font-size: 4rem;
+  }
+}

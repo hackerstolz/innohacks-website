@@ -1,0 +1,41 @@
+@import '_utilities';
+
+.triangle {
+  position: relative;
+  padding: 2*$gap $gap;
+  z-index: 1;
+
+  &.black {
+    color: white;
+
+    &:before {
+      background-color: $background-color;
+    }
+  }
+
+  &.yellow {
+    color: $background-color;
+
+    &:before {
+      background-color: $primary-color;
+    }
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    transform: skewY(-1deg);
+    transform-origin: top left;
+    z-index: -1;
+  }
+
+  &.inverse {
+    &:before {
+      transform: skewY(1deg);
+    }
+  }
+}
