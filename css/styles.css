@@ -119,6 +119,7 @@
 
 /* END Black Italic */
 .triangle {
+  text-align: center;
   position: relative;
   padding: 50px 25px;
   z-index: 1; }

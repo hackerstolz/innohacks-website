@@ -1,6 +1,7 @@
 @import '_utilities';
 
 .triangle {
+  text-align: center;
   position: relative;
   padding: 2*$gap $gap;
   z-index: 1;
