@@ -156,7 +156,8 @@ body {
   font-size: 1.5rem; }
 
 .logo {
-  max-width: 500px; }
+  max-width: 500px;
+  width: 100%; }
 
 .bg-black {
   background-color: #2B2E34; }
@@ -174,7 +175,8 @@ body {
   -ms-flex-align: center;
       align-items: center; }
   .footer img {
-    max-height: 50px; }
+    max-height: 50px;
+    width: 100%; }
 
 a {
   text-decoration: none;
