@@ -25,7 +25,8 @@ gulp.task('browser-sync-init', done => {
         ghostMode: false,
         files: [
             '*.html',
-            'css/*.css'
+            'css/*.css',
+            'js/*.js'
         ],
         open: true,
         server: {

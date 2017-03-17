@@ -24,15 +24,19 @@
     <title>Inno{Hacks} 2017</title>
 
     <link href="css/styles.css" rel="stylesheet"/>
+    <link href="css/flipclock.css" rel="stylesheet"/>
     <link rel="icon" type="image/png" href="assets/favicon.ico">
 </head>
 <body>
     <div class="first-triangle">
-        <div class="triangle black inverse">
+        <div class="triangle content black inverse">
             <img src="assets/InnoHacks-Logo.svg" class="logo"/>
         </div>
     </div>
-    <div class="triangle yellow teaser">
+    <div class="content clock">
+        <div id="clock-wrapper"></div>
+    </div>
+    <div class="triangle content yellow teaser">
         <h1>SAVE THE DATE</h1>
         <p>
             29<sup>th</sup> September - 1<sup>st</sup> October<br>
@@ -54,7 +58,11 @@
 
         ga('create', 'UA-76308979-1', 'auto');
         ga('send', 'pageview');
-
     </script>
+
+    <script defer src="js/jquery-3.2.0.min.js"></script>
+    <script defer src="js/flipclock.min.js"></script>
+    <script defer src="js/moment.min.js"></script>
+    <script defer src="js/countdown.js"></script>
 </body>
 </html>

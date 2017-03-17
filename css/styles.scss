@@ -54,3 +54,83 @@ a {
     font-size: 4rem;
   }
 }
+
+.content {
+  padding: 2*$gap $gap;
+}
+
+.clock {
+  .flip-clock-wrapper {
+    display: flex;
+    justify-content: center;
+
+    ul {
+      li {
+        a {
+          div {
+            div.inn {
+              background-color: $background-color;
+              color: $primary-color;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @include media('<=tablet') {
+    .flip-clock-wrapper ul li a div div.inn{
+      font-size: 2.5rem;
+    }
+    .flip-clock-wrapper ul li a div{
+      font-size: 3rem;
+    }
+    .flip-clock-wrapper ul {
+      width: 2.4rem;
+      height: 3rem;
+      font-size: 3rem;
+    }
+
+    .flip-clock-wrapper ul li {
+      line-height: 3rem;
+    }
+
+    /* Adjust the position of the top's dot */
+    .flip-clock-dot.top {
+      top: 1.2rem;
+    }
+    /* Adjust the position of the bottom's dot */
+    .flip-clock-dot.bottom {
+      bottom: 0;
+      top: 2.1rem;
+    }
+
+    .flip-clock-dot{
+      width: .5rem;
+      height: .5rem;
+    }
+
+    .flip-clock-divider {
+      width: 1rem;
+      height: 5rem;
+    }
+    .flip-clock-divider .flip-clock-label{
+      right: -4.5rem;
+    }
+
+    .flip-clock-divider.minutes .flip-clock-label {
+      right: -4.5rem;
+    }
+    .flip-clock-divider.seconds .flip-clock-label {
+      right: -4.1rem;
+    }
+
+    padding-bottom: $gap/2;
+    padding-left: 0;
+    padding-right: 0;
+
+    .flip-clock-wrapper {
+      margin: 0;
+    }
+  }
+}
