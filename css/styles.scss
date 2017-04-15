@@ -29,6 +29,59 @@ body {
   background: linear-gradient($background-color 0%, $background-color 30%, white 30%, white 100%);
 }
 
+.sponsors {
+  p {
+    margin-bottom: 3 * $gap;
+  }
+
+  div {
+    & + div {
+      margin-top: 3 * $gap;
+    }
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  a {
+    @include media('<=tablet') {
+      margin-left: $gap;
+      margin-right: $gap;
+    }
+
+    & + a {
+      margin-left: 3 * $gap;
+
+      @include media('<=tablet') {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+.sponsor-image {
+  width: 100%;
+  max-width: 450px;
+  max-height: 200px;
+  min-width: 300px;
+
+  &.medium {
+    max-width: 330px;
+    max-height: 120px;
+    min-width: 280px;
+  }
+
+  &.small {
+    max-width: 210px;
+    min-width: 170px;
+  }
+}
+
+.small {
+  font-size: 1.25rem;
+}
+
 .footer {
   display: flex;
   padding: 0 $gap;
@@ -57,6 +110,14 @@ a {
 
 .content {
   padding: 2*$gap $gap;
+}
+
+.triangle {
+  &.black {
+    a {
+      color: white;
+    }
+  }
 }
 
 .clock {

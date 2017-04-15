@@ -165,6 +165,46 @@ body {
 .first-triangle {
   background: linear-gradient(#2B2E34 0%, #2B2E34 30%, white 30%, white 100%); }
 
+.sponsors p {
+  margin-bottom: 75px; }
+
+.sponsors div {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  .sponsors div + div {
+    margin-top: 75px; }
+
+@media (max-width: 768px) {
+  .sponsors a {
+    margin-left: 25px;
+    margin-right: 25px; } }
+
+.sponsors a + a {
+  margin-left: 75px; }
+  @media (max-width: 768px) {
+    .sponsors a + a {
+      margin-left: 0; } }
+
+.sponsor-image {
+  width: 100%;
+  max-width: 450px;
+  max-height: 200px;
+  min-width: 300px; }
+  .sponsor-image.medium {
+    max-width: 330px;
+    max-height: 120px;
+    min-width: 280px; }
+  .sponsor-image.small {
+    max-width: 210px;
+    min-width: 170px; }
+
+.small {
+  font-size: 1.25rem; }
+
 .footer {
   display: -ms-flexbox;
   display: flex;
@@ -188,6 +228,9 @@ a {
 
 .content {
   padding: 50px 25px; }
+
+.triangle.black a {
+  color: white; }
 
 .clock .flip-clock-wrapper {
   display: -ms-flexbox;
