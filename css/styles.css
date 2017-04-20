@@ -166,6 +166,9 @@
     transform-origin: top left;
     z-index: -1; 
 }
+.triangle.inverse {
+    padding: 80px 25px 70px;
+}
 .triangle.inverse:before {
     transform: skewY(1deg); 
 }
