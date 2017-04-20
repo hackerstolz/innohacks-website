@@ -200,9 +200,6 @@ a:hover {
     background: linear-gradient(#2B2E34 0%, #2B2E34 30%, white 30%, white 100%); 
 }
 
-.teaser h1 {
-  font-weight: normal;
-  font-size: 4rem; }
 .first-triangle .logo {
     max-width: 500px;
     width: 100%; 
@@ -212,6 +209,10 @@ a:hover {
     padding: 50px 25px; 
 }
 
+.clock h1 {
+    /*font-weight: normal;*/
+    font-size: 4rem; 
+}
 .clock .flip-clock-wrapper {
     display: -ms-flexbox;
     display: flex;
@@ -272,6 +273,14 @@ a:hover {
     .clock .flip-clock-wrapper {
         margin: 0; 
     } 
+}
+
+.faq p {
+    
+}
+.faq .question {
+    font-weight: bold;
+    margin-top: 30px;
 }
 
 .sponsors p {
