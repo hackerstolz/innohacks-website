@@ -58,12 +58,21 @@ body {
       }
     }
   }
+
+  a {
+    &[target] {
+      &:hover {
+        background-color: inherit;
+        color: inherit;
+      }
+    }
+  }
 }
 
 .sponsor-image {
   width: 100%;
-  max-width: 450px;
-  max-height: 200px;
+  max-width: 400px;
+  max-height: 170px;
   min-width: 300px;
 
   &.medium {
@@ -73,8 +82,8 @@ body {
   }
 
   &.small {
-    max-width: 210px;
-    min-width: 170px;
+    max-width: 150px;
+    min-width: 130px;
   }
 }
 
@@ -89,41 +98,39 @@ body {
 
   justify-content: space-between;
   align-items: center;
+  margin-top: $gap;
 
   img {
     max-width: 200px;
     width: 100%;
   }
-}
 
-a {
-  text-decoration: none;
-  color: $background-color;
-}
-
-.teaser {
-  h1 {
-    font-weight: normal;
-    font-size: 4rem;
+  a {
+    text-decoration: none;
   }
 }
 
-.content {
-  padding: 2*$gap $gap;
+a {
+  color: $background-color;
 }
 
-.triangle {
-  &.black {
-    a {
-      color: white;
-    }
+.faq {
+  .question {
+    font-weight: bold;
+    margin-top: 30px;
   }
 }
 
 .clock {
+  h1 {
+    font-size: 4rem;
+    margin-bottom: $gap;
+  }
+
   .flip-clock-wrapper {
     display: flex;
     justify-content: center;
+    margin-bottom: $gap * 2;
 
     ul {
       li {
@@ -140,10 +147,10 @@ a {
   }
 
   @include media('<=tablet') {
-    .flip-clock-wrapper ul li a div div.inn{
+    .flip-clock-wrapper ul li a div div.inn {
       font-size: 2.5rem;
     }
-    .flip-clock-wrapper ul li a div{
+    .flip-clock-wrapper ul li a div {
       font-size: 3rem;
     }
     .flip-clock-wrapper ul {
@@ -166,7 +173,7 @@ a {
       top: 2.1rem;
     }
 
-    .flip-clock-dot{
+    .flip-clock-dot {
       width: .5rem;
       height: .5rem;
     }
@@ -175,7 +182,7 @@ a {
       width: 1rem;
       height: 5rem;
     }
-    .flip-clock-divider .flip-clock-label{
+    .flip-clock-divider .flip-clock-label {
       right: -4.5rem;
     }
 
@@ -193,5 +200,18 @@ a {
     .flip-clock-wrapper {
       margin: 0;
     }
+  }
+}
+
+.coc {
+  table {
+    display: inline-block;
+    text-align: left;
+  }
+}
+
+@include media('>tablet') {
+  .content {
+    padding: 2 * $gap 15vw;
   }
 }

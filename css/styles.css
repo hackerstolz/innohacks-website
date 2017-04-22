@@ -3,8 +3,7 @@
   font-family: Roboto;
   src: url("../assets/fonts//Thin/Roboto-Thin.woff2?v=1.1.0") format("woff2"), url("../assets/fonts//Thin/Roboto-Thin.woff?v=1.1.0") format("woff"), url("../assets/fonts//Thin/Roboto-Thin.ttf?v=1.1.0") format("truetype");
   font-weight: 100;
-  font-style: normal; 
-}
+  font-style: normal; }
 
 /* END Thin */
 /* BEGIN Thin Italic */
@@ -12,8 +11,7 @@
   font-family: Roboto;
   src: url("../assets/fonts//ThinItalic/Roboto-ThinItalic.woff2?v=1.1.0") format("woff2"), url("../assets/fonts//ThinItalic/Roboto-ThinItalic.woff?v=1.1.0") format("woff"), url("../assets/fonts//ThinItalic/Roboto-ThinItalic.ttf?v=1.1.0") format("truetype");
   font-weight: 100;
-  font-style: italic; 
-}
+  font-style: italic; }
 
 /* END Thin Italic */
 /* BEGIN Light */
@@ -21,8 +19,7 @@
   font-family: Roboto;
   src: url("../assets/fonts//Light/Roboto-Light.woff2?v=1.1.0") format("woff2"), url("../assets/fonts//Light/Roboto-Light.woff?v=1.1.0") format("woff"), url("../assets/fonts//Light/Roboto-Light.ttf?v=1.1.0") format("truetype");
   font-weight: 300;
-  font-style: normal; 
-}
+  font-style: normal; }
 
 /* END Light */
 /* BEGIN Light Italic */
@@ -30,8 +27,7 @@
   font-family: Roboto;
   src: url("../assets/fonts//LightItalic/Roboto-LightItalic.woff2?v=1.1.0") format("woff2"), url("../assets/fonts//LightItalic/Roboto-LightItalic.woff?v=1.1.0") format("woff"), url("../assets/fonts//LightItalic/Roboto-LightItalic.ttf?v=1.1.0") format("truetype");
   font-weight: 300;
-  font-style: italic; 
-}
+  font-style: italic; }
 
 /* END Light Italic */
 /* BEGIN Regular */
@@ -39,15 +35,13 @@
   font-family: Roboto;
   src: url("../assets/fonts//Regular/Roboto-Regular.woff2?v=1.1.0") format("woff2"), url("../assets/fonts//Regular/Roboto-Regular.woff?v=1.1.0") format("woff"), url("../assets/fonts//Regular/Roboto-Regular.ttf?v=1.1.0") format("truetype");
   font-weight: 400;
-  font-style: normal; 
-}
+  font-style: normal; }
 
 @font-face {
   font-family: Roboto;
   src: url("../assets/fonts//Regular/Roboto-Regular.woff2?v=1.1.0") format("woff2"), url("../assets/fonts//Regular/Roboto-Regular.woff?v=1.1.0") format("woff"), url("../assets/fonts//Regular/Roboto-Regular.ttf?v=1.1.0") format("truetype");
   font-weight: normal;
-  font-style: normal; 
-}
+  font-style: normal; }
 
 /* END Regular */
 /* BEGIN Italic */
@@ -55,15 +49,13 @@
   font-family: Roboto;
   src: url("../assets/fonts//Italic/Roboto-Italic.woff2?v=1.1.0") format("woff2"), url("../assets/fonts//Italic/Roboto-Italic.woff?v=1.1.0") format("woff"), url("../assets/fonts//Italic/Roboto-Italic.ttf?v=1.1.0") format("truetype");
   font-weight: 400;
-  font-style: italic; 
-}
+  font-style: italic; }
 
 @font-face {
   font-family: Roboto;
   src: url("../assets/fonts//Italic/Roboto-Italic.woff2?v=1.1.0") format("woff2"), url("../assets/fonts//Italic/Roboto-Italic.woff?v=1.1.0") format("woff"), url("../assets/fonts//Italic/Roboto-Italic.ttf?v=1.1.0") format("truetype");
   font-weight: normal;
-  font-style: italic; 
-}
+  font-style: italic; }
 
 /* END Italic */
 /* BEGIN Medium */
@@ -71,8 +63,7 @@
   font-family: Roboto;
   src: url("../assets/fonts//Medium/Roboto-Medium.woff2?v=1.1.0") format("woff2"), url("../assets/fonts//Medium/Roboto-Medium.woff?v=1.1.0") format("woff"), url("../assets/fonts//Medium/Roboto-Medium.ttf?v=1.1.0") format("truetype");
   font-weight: 500;
-  font-style: normal; 
-}
+  font-style: normal; }
 
 /* END Medium */
 /* BEGIN Medium Italic */
@@ -80,8 +71,7 @@
   font-family: Roboto;
   src: url("../assets/fonts//MediumItalic/Roboto-MediumItalic.woff2?v=1.1.0") format("woff2"), url("../assets/fonts//MediumItalic/Roboto-MediumItalic.woff?v=1.1.0") format("woff"), url("../assets/fonts//MediumItalic/Roboto-MediumItalic.ttf?v=1.1.0") format("truetype");
   font-weight: 500;
-  font-style: italic; 
-}
+  font-style: italic; }
 
 /* END Medium Italic */
 /* BEGIN Bold */
@@ -89,15 +79,13 @@
   font-family: Roboto;
   src: url("../assets/fonts//Bold/Roboto-Bold.woff2?v=1.1.0") format("woff2"), url("../assets/fonts//Bold/Roboto-Bold.woff?v=1.1.0") format("woff"), url("../assets/fonts//Bold/Roboto-Bold.ttf?v=1.1.0") format("truetype");
   font-weight: 700;
-  font-style: normal; 
-}
+  font-style: normal; }
 
 @font-face {
   font-family: Roboto;
   src: url("../assets/fonts//Bold/Roboto-Bold.woff2?v=1.1.0") format("woff2"), url("../assets/fonts//Bold/Roboto-Bold.woff?v=1.1.0") format("woff"), url("../assets/fonts//Bold/Roboto-Bold.ttf?v=1.1.0") format("truetype");
   font-weight: bold;
-  font-style: normal; 
-}
+  font-style: normal; }
 
 /* END Bold */
 /* BEGIN Bold Italic */
@@ -105,15 +93,13 @@
   font-family: Roboto;
   src: url("../assets/fonts//BoldItalic/Roboto-BoldItalic.woff2?v=1.1.0") format("woff2"), url("../assets/fonts//BoldItalic/Roboto-BoldItalic.woff?v=1.1.0") format("woff"), url("../assets/fonts//BoldItalic/Roboto-BoldItalic.ttf?v=1.1.0") format("truetype");
   font-weight: 700;
-  font-style: italic; 
-}
+  font-style: italic; }
 
 @font-face {
   font-family: Roboto;
   src: url("../assets/fonts//BoldItalic/Roboto-BoldItalic.woff2?v=1.1.0") format("woff2"), url("../assets/fonts//BoldItalic/Roboto-BoldItalic.woff?v=1.1.0") format("woff"), url("../assets/fonts//BoldItalic/Roboto-BoldItalic.ttf?v=1.1.0") format("truetype");
   font-weight: bold;
-  font-style: italic; 
-}
+  font-style: italic; }
 
 /* END Bold Italic */
 /* BEGIN Black */
@@ -121,8 +107,7 @@
   font-family: Roboto;
   src: url("../assets/fonts//Black/Roboto-Black.woff2?v=1.1.0") format("woff2"), url("../assets/fonts//Black/Roboto-Black.woff?v=1.1.0") format("woff"), url("../assets/fonts//Black/Roboto-Black.ttf?v=1.1.0") format("truetype");
   font-weight: 900;
-  font-style: normal; 
-}
+  font-style: normal; }
 
 /* END Black */
 /* BEGIN Black Italic */
@@ -130,32 +115,30 @@
   font-family: Roboto;
   src: url("../assets/fonts//BlackItalic/Roboto-BlackItalic.woff2?v=1.1.0") format("woff2"), url("../assets/fonts//BlackItalic/Roboto-BlackItalic.woff?v=1.1.0") format("woff"), url("../assets/fonts//BlackItalic/Roboto-BlackItalic.ttf?v=1.1.0") format("truetype");
   font-weight: 900;
-  font-style: italic; 
-}
+  font-style: italic; }
 
 /* END Black Italic */
 .triangle {
-    text-align: center;
-    position: relative;
-    z-index: 1; 
-}
-.triangle.black {
-    color: white; 
-}
-.triangle.black:before {
-    background-color: #2B2E34; 
-}
-.triangle.black a {
-    color: white; 
-}
-.triangle.yellow {
-    color: #2B2E34; 
-    padding-bottom: 100px;
-}
-.triangle.yellow:before {
-    background-color: #FED74C; 
-}
-.triangle:before {
+  text-align: center;
+  position: relative;
+  z-index: 1; }
+  .triangle.black {
+    color: white; }
+    .triangle.black a {
+      color: white; }
+    .triangle.black:before {
+      background-color: #2B2E34; }
+  .triangle.yellow {
+    color: #2B2E34; }
+    .triangle.yellow:before {
+      background-color: #FED74C; }
+    .triangle.yellow a:hover {
+      background-color: black;
+      color: #FED74C; }
+  .triangle a:hover {
+    background-color: black;
+    color: white; }
+  .triangle:before {
     content: '';
     position: absolute;
     top: 20px;
@@ -164,192 +147,161 @@
     bottom: 20px;
     transform: skewY(-1deg);
     transform-origin: top left;
-    z-index: -1; 
-}
-.triangle.inverse {
-    padding: 80px 25px 70px;
-}
-.triangle.inverse:before {
-    transform: skewY(1deg); 
-}
-
-* {
-    box-sizing: content-box;
-    padding: 0;
-    margin: 0; 
-}
-
-body {
-    background-color: white;
-    color: #2B2E34;
-    font-family: Roboto, "Helvetica Neue", sans-serif;
-    line-height: 1.5;
-    font-size: 1.5rem; 
-}
-
-a {
-    /*text-decoration: none;*/
-    color: #2B2E34; 
-}
-a:hover {
-    font-weight: 900;
-}
-
-.small {
-    font-size: 1.25rem; 
-}
-
-.first-triangle {
-    background: linear-gradient(#2B2E34 0%, #2B2E34 30%, white 30%, white 100%); 
-}
-
-.first-triangle .logo {
-    max-width: 500px;
-    width: 100%; 
-}
+    z-index: -1; }
+  .triangle.inverse:before {
+    transform: skewY(1deg); }
 
 .content {
-    padding: 50px 25px; 
-}
+  padding: 50px 25px; }
+  .content.yellow:not(.inverse) {
+    padding-bottom: 125px; }
+  .content.yellow.inverse {
+    padding-top: 75px; }
 
-.clock h1 {
-    /*font-weight: normal;*/
-    font-size: 4rem; 
-}
-.clock .flip-clock-wrapper {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: center;
-        justify-content: center; 
-    margin-bottom: 40px;
-}
-.clock .flip-clock-wrapper ul li a div div.inn {
-    background-color: #2B2E34;
-    color: #FED74C; 
-}
-@media (max-width: 768px) {
-    .clock {
-        /* Adjust the position of the top's dot */
-        /* Adjust the position of the bottom's dot */
-        padding-bottom: 12.5px;
-        padding-left: 0;
-        padding-right: 0; 
-    }
-    .clock .flip-clock-wrapper ul li a div div.inn {
-        font-size: 2.5rem; 
-    }
-    .clock .flip-clock-wrapper ul li a div {
-        font-size: 3rem; 
-    }
-    .clock .flip-clock-wrapper ul {
-        width: 2.4rem;
-        height: 3rem;
-        font-size: 3rem; 
-    }
-    .clock .flip-clock-wrapper ul li {
-        line-height: 3rem; 
-    }
-    .clock .flip-clock-dot.top {
-        top: 1.2rem; 
-    }
-    .clock .flip-clock-dot.bottom {
-      bottom: 0;
-      top: 2.1rem; 
-    }
-    .clock .flip-clock-dot {
-        width: .5rem;
-        height: .5rem; 
-    }
-    .clock .flip-clock-divider {
-        width: 1rem;
-        height: 5rem; 
-    }
-    .clock .flip-clock-divider .flip-clock-label {
-        right: -4.5rem; 
-    }
-    .clock .flip-clock-divider.minutes .flip-clock-label {
-        right: -4.5rem; 
-    }
-    .clock .flip-clock-divider.seconds .flip-clock-label {
-        right: -4.1rem; 
-    }
-    .clock .flip-clock-wrapper {
-        margin: 0; 
-    } 
-}
+* {
+  box-sizing: content-box;
+  padding: 0;
+  margin: 0; }
 
-.faq p {
-    
-}
-.faq .question {
-    font-weight: bold;
-    margin-top: 30px;
-}
+body {
+  background-color: white;
+  color: #2B2E34;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  line-height: 1.5;
+  font-size: 1.5rem; }
+
+.logo {
+  max-width: 500px;
+  width: 100%; }
+
+.bg-black {
+  background-color: #2B2E34; }
+
+.first-triangle {
+  background: linear-gradient(#2B2E34 0%, #2B2E34 30%, white 30%, white 100%); }
 
 .sponsors p {
-    margin-bottom: 75px; 
-}
+  margin-bottom: 75px; }
+
 .sponsors div {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-        align-items: center;
-    -ms-flex-pack: center;
-        justify-content: center; 
-}
-.sponsors div + div {
-    margin-top: 75px; 
-}
-.sponsors a + a {
-    margin-left: 75px; 
-}
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  .sponsors div + div {
+    margin-top: 75px; }
+
 @media (max-width: 768px) {
-    .sponsors a {
-        margin-left: 25px;
-        margin-right: 25px; 
-    } 
+  .sponsors a {
+    margin-left: 25px;
+    margin-right: 25px; } }
+
+.sponsors a + a {
+  margin-left: 75px; }
+  @media (max-width: 768px) {
     .sponsors a + a {
-        margin-left: 0; 
-    } 
-}
+      margin-left: 0; } }
+
+.sponsors a[target]:hover {
+  background-color: inherit;
+  color: inherit; }
 
 .sponsor-image {
-    width: 100%;
-    max-width: 450px;
-    max-height: 200px;
-    min-width: 300px; 
-}
-.sponsor-image.medium {
+  width: 100%;
+  max-width: 400px;
+  max-height: 170px;
+  min-width: 300px; }
+  .sponsor-image.medium {
     max-width: 330px;
     max-height: 120px;
-    min-width: 280px; 
-}
-.sponsor-image.small {
-    max-width: 210px;
-    min-width: 170px; 
-}
+    min-width: 280px; }
+  .sponsor-image.small {
+    max-width: 150px;
+    min-width: 130px; }
+
+.small {
+  font-size: 1.25rem; }
 
 .footer {
-    display: -ms-flexbox;
-    display: flex;
-    padding: 0 25px;
-    font-size: 1rem;
-    -ms-flex-pack: justify;
-        justify-content: space-between;
-    -ms-flex-align: center;
-        align-items: center; 
-}
-.footer img {
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 25px;
+  font-size: 1rem;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  margin-top: 25px; }
+  .footer img {
     max-width: 200px;
-    width: 100%; 
-}
+    width: 100%; }
+  .footer a {
+    text-decoration: none; }
+
+a {
+  color: #2B2E34; }
+
+.faq .question {
+  font-weight: bold;
+  margin-top: 30px; }
+
+.clock h1 {
+  font-size: 4rem;
+  margin-bottom: 25px; }
+
+.clock .flip-clock-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  margin-bottom: 50px; }
+  .clock .flip-clock-wrapper ul li a div div.inn {
+    background-color: #2B2E34;
+    color: #FED74C; }
+
+@media (max-width: 768px) {
+  .clock {
+    /* Adjust the position of the top's dot */
+    /* Adjust the position of the bottom's dot */
+    padding-bottom: 12.5px;
+    padding-left: 0;
+    padding-right: 0; }
+    .clock .flip-clock-wrapper ul li a div div.inn {
+      font-size: 2.5rem; }
+    .clock .flip-clock-wrapper ul li a div {
+      font-size: 3rem; }
+    .clock .flip-clock-wrapper ul {
+      width: 2.4rem;
+      height: 3rem;
+      font-size: 3rem; }
+    .clock .flip-clock-wrapper ul li {
+      line-height: 3rem; }
+    .clock .flip-clock-dot.top {
+      top: 1.2rem; }
+    .clock .flip-clock-dot.bottom {
+      bottom: 0;
+      top: 2.1rem; }
+    .clock .flip-clock-dot {
+      width: .5rem;
+      height: .5rem; }
+    .clock .flip-clock-divider {
+      width: 1rem;
+      height: 5rem; }
+    .clock .flip-clock-divider .flip-clock-label {
+      right: -4.5rem; }
+    .clock .flip-clock-divider.minutes .flip-clock-label {
+      right: -4.5rem; }
+    .clock .flip-clock-divider.seconds .flip-clock-label {
+      right: -4.1rem; }
+    .clock .flip-clock-wrapper {
+      margin: 0; } }
 
 .coc table {
-    display: inline-block; 
-    text-align: left;
-}
-@media (min-width: 768px) {
-    .coc {
-        padding: 50px 15vw;
-    }
-}
+  display: inline-block;
+  text-align: left; }
+
+@media (min-width: 769px) {
+  .content {
+    padding: 50px 15vw; } }
