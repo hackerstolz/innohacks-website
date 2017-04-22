@@ -1,10 +1,10 @@
 .triangle {
   text-align: center;
   position: relative;
-  z-index: 1;
 
   &.black {
     color: white;
+    z-index: 1;
 
     a {
       color: white;

@@ -10,4 +10,5 @@
 * Run `npm start` in the root folder of the repository
 
 ## Warning
-Do not change CSS directly. :-)
+* Do not change CSS directly. :-)
+* The master branch is auto deployed to inno-hacks.de
