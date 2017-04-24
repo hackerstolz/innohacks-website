@@ -305,3 +305,28 @@ a {
 @media (min-width: 769px) {
   .content {
     padding: 50px 15vw; } }
+
+@media (max-width: 767px) {
+  .fact-container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; } }
+
+.fact-container {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex: 1;
+      flex: 1;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  .fact-container .fact {
+    margin-left: 25px;
+    margin-right: 25px; }
+    .fact-container .fact .desc {
+      font-size: 14px;
+      white-space: nowrap; }
+    .fact-container .fact .value {
+      margin-top: -14px;
+      font-weight: bold;
+      font-size: 60px; }
