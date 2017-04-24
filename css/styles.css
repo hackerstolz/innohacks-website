@@ -333,3 +333,6 @@ a {
 
 .ug-textpanel-title {
   display: none !important; }
+
+.eventbrite, .slack-integration {
+  margin-top: 25px; }
