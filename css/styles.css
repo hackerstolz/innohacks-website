@@ -330,3 +330,6 @@ a {
       margin-top: -14px;
       font-weight: bold;
       font-size: 60px; }
+
+.ug-textpanel-title {
+  display: none !important; }
