@@ -31,14 +31,32 @@
     
     <link rel="icon" type="image/png" href="assets/favicon.ico">
 </head>
-<body>
-    <div class="first-triangle">
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nb">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="nb">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a data-scroll href="#tickets">Tickets</a></li>
+                <li><a data-scroll href="#faq">FAQ</a></li>
+                <li><a data-scroll href="#sponsors">Sponsors</a></li>
+                <li><a data-scroll href="#team">Team</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="first-triangle" id="top">
         <div class="triangle content black inverse">
             <img src="assets/InnoHacks-Logo.svg" class="logo"/>
         </div>
     </div>
 
-    <div class="triangle content clock yellow">
+    <div class="triangle content clock yellow" id="tickets">
         <h1>GRAB YOUR TICKET</h1>
         <div id="clock-wrapper"></div>
         <p class="small">
@@ -52,7 +70,7 @@
         </div>
     </div>
 
-    <div class="triangle content">
+    <div class="triangle content" id="recap">
         <h1>Recap: Inno{Hacks} 2016</h1>
 
         <div class="fact-container">
@@ -84,7 +102,7 @@
         </small>
     </div>
 
-    <div class="triangle content faq inverse yellow">
+    <div class="triangle content faq inverse yellow" id="faq">
         <h1>FAQ</h1>
 
         <p class="question">
@@ -154,7 +172,7 @@
         </p>
     </div>
 
-    <div class="triangle content sponsors">
+    <div class="triangle content sponsors" id="sponsors">
         <h1>SPONSORS</h1>
         <p class="small">
             Are you interested in sponsoring Inno{Hacks}? Please contact us at <a href="mailto:innohacks@hackerstolz.de">innohacks@hackerstolz.de</a>
@@ -224,7 +242,7 @@
         
     </div>
 
-    <div class="triangle content slack yellow">
+    <div class="triangle content slack yellow" id="slack">
         <h1>Stay connected</h1>
         <p class="small">Come and join our Slack community (#innohack2017) to stay up to date!</p>
         <div class="slack-integration">
@@ -232,7 +250,7 @@
         </div>
     </div>
 
-    <div class="triangle content team">
+    <div class="triangle content team" id="team">
         <h1>Team</h1>
         <span class="space"></span>
         
@@ -300,8 +318,14 @@
     <script src="js/flipclock.min.js?v1"></script>
     <script src="js/moment.min.js?v1"></script>
     <script src="js/countdown.js?v2"></script>
+    <script src="js/smooth-scroll.min.js"></script>
 
+    <script>
+        smoothScroll.init();
+    </script>
+    
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="//flickrembed.com/embed_v2.js.php?source=flickr&layout=responsive&input=www.flickr.com/photos/hackerstolz/albums/72157670643144205&sort=0&by=album&theme=tilesgrid&scale=fill&skin=default-light&id=58fe605d444f2"></script>
+    
 </body>
 </html>

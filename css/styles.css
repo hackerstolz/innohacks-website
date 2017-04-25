@@ -164,14 +164,17 @@
   margin: 0; }
 
 html {
-  font-size: inherit; }
+  box-sizing: border-box;
+  font-size: inherit;
+  overflow-x: hidden; }
 
 body {
   background-color: white;
   color: #2B2E34;
   font-family: Roboto, "Helvetica Neue", sans-serif;
   line-height: 1.5;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  position: relative; }
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
   font-family: inherit;
@@ -196,6 +199,9 @@ body {
 
 .bg-black {
   background-color: #2B2E34; }
+
+.navbar {
+  font-size: 80%; }
 
 .first-triangle {
   background: linear-gradient(#2B2E34 0%, #2B2E34 30%, white 30%, white 100%); }

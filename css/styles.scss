@@ -9,7 +9,9 @@
 }
 
 html {
+    box-sizing: border-box;
     font-size: inherit;
+    overflow-x: hidden;
 }
 
 body {
@@ -18,6 +20,7 @@ body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
   line-height: 1.5;
   font-size: 1.5rem;
+  position: relative;
 }
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
@@ -47,6 +50,10 @@ body {
 
 .bg-black {
   background-color: $background-color;
+}
+
+.navbar {
+    font-size: 80%;
 }
 
 .first-triangle {
