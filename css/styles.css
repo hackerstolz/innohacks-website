@@ -202,6 +202,8 @@ body {
 
 .navbar {
   font-size: 80%; }
+  .navbar a {
+    text-decoration: none; }
 
 .first-triangle {
   background: linear-gradient(#2B2E34 0%, #2B2E34 30%, white 30%, white 100%); }
@@ -292,11 +294,20 @@ body {
     text-decoration: none; }
 
 a {
-  color: #2B2E34; }
+  color: #2B2E34;
+  text-decoration: underline; }
 
 .faq .question {
   font-weight: bold;
   margin-top: 30px; }
+
+@media (min-width: 769px) {
+  .faq p:nth-child(4n+0), .faq p:nth-child(4n+1) {
+    text-align: right;
+    padding-left: 30%; }
+  .faq p:nth-child(4n+2), .faq p:nth-child(4n+3) {
+    text-align: left;
+    padding-right: 30%; } }
 
 .clock h1 {
   font-size: 4rem;

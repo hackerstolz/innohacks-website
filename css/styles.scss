@@ -53,7 +53,11 @@ body {
 }
 
 .navbar {
-    font-size: 80%;
+  font-size: 80%;
+  
+  a {
+    text-decoration: none;
+  }
 }
 
 .first-triangle {
@@ -173,12 +177,24 @@ body {
 
 a {
   color: $background-color;
+  text-decoration: underline;
 }
 
 .faq {
   .question {
     font-weight: bold;
     margin-top: 30px;
+  }
+  
+  @include media('>tablet') {
+      p:nth-child(4n+0), p:nth-child(4n+1) {
+        text-align: right;
+        padding-left: 30%;
+      }
+      p:nth-child(4n+2), p:nth-child(4n+3) {
+        text-align: left;
+        padding-right: 30%;
+      }
   }
 }
 
