@@ -178,6 +178,9 @@ body {
   height: 50px;
   display: block; }
 
+.small {
+  font-size: 80%; }
+
 .bg-black {
   background-color: #2B2E34; }
 
@@ -187,57 +190,71 @@ body {
     max-width: 500px;
     width: 100%; }
 
-.sponsors p {
+.sponsors p, .team p {
   margin-bottom: 75px; }
 
-.sponsors div {
+.sponsors div, .team div {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
       align-items: center;
   -ms-flex-pack: center;
       justify-content: center; }
-  .sponsors div + div {
+  .sponsors div + div, .team div + div {
     margin-top: 75px; }
 
 @media (max-width: 768px) {
-  .sponsors a {
+  .sponsors a, .team a {
     margin-left: 25px;
     margin-right: 25px; } }
 
-.sponsors a + a {
+.sponsors a + a, .team a + a {
   margin-left: 75px; }
   @media (max-width: 768px) {
-    .sponsors a + a {
+    .sponsors a + a, .team a + a {
       margin-left: 0; } }
 
-.sponsors a[target] {
+.sponsors a[target], .team a[target] {
   text-decoration: none; }
-  .sponsors a[target]:hover {
+  .sponsors a[target]:hover, .team a[target]:hover {
     background-color: inherit;
     color: inherit; }
 
-.sponsors figcaption {
+.sponsors figcaption, .team figcaption {
   max-width: 300px;
   min-width: 100%; }
 
-.sponsor-image {
+.sponsors .row a:nth-child(odd) .fancy-border, .team .row a:nth-child(odd) .fancy-border {
+  transform: rotate(1deg); }
+
+.sponsors .row a:nth-child(even) .fancy-border, .team .row a:nth-child(even) .fancy-border {
+  transform: rotate(-1deg); }
+
+.sponsor-image, .team-image {
   display: inline-block;
   margin-bottom: 25px;
   width: 100%;
   max-width: 400px;
   min-width: 300px;
   max-height: 170px; }
-  .sponsor-image.medium {
+  .sponsor-image.medium, .team-image.medium {
     max-width: 330px;
     min-width: 280px;
     max-height: 120px; }
-  .sponsor-image.small {
+  .sponsor-image.small, .team-image.small {
     max-width: 150px;
     min-width: 130px; }
-
-.small {
-  font-size: 80%; }
+  .sponsor-image.square, .team-image.square {
+    width: 220px;
+    height: 220px;
+    max-width: inherit;
+    min-width: inherit;
+    max-height: inherit;
+    min-height: inherit; }
+  .sponsor-image.fancy-border, .team-image.fancy-border {
+    padding: 15px;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4); }
 
 .footer {
   display: -ms-flexbox;

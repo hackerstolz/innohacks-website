@@ -26,6 +26,10 @@ body {
   display: block;
 }
 
+.small {
+  font-size: 80%;
+}
+
 .bg-black {
   background-color: $background-color;
 }
@@ -39,7 +43,7 @@ body {
   }
 }
 
-.sponsors {
+.sponsors, .team {
   p {
     margin-bottom: 3 * $gap;
   }
@@ -82,9 +86,16 @@ body {
     max-width: 300px;
     min-width: 100%;
   }
+  
+  .row a:nth-child(odd) .fancy-border {
+    transform: rotate(1deg);
+  }
+  .row a:nth-child(even) .fancy-border {
+    transform: rotate(-1deg);
+  }
 }
 
-.sponsor-image {
+.sponsor-image, .team-image {
   display: inline-block;
   margin-bottom: $gap;
   width: 100%;
@@ -102,10 +113,21 @@ body {
     max-width: 150px;
     min-width: 130px;
   }
-}
-
-.small {
-  font-size: 80%;
+  
+  &.square {
+    width: 220px;
+    height: 220px;
+    max-width: inherit;
+    min-width: inherit;
+    max-height: inherit;
+    min-height: inherit;
+  }
+  
+  &.fancy-border {
+    padding: 15px;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+  }
 }
 
 .footer {
