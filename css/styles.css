@@ -170,15 +170,22 @@ body {
   line-height: 1.5;
   font-size: 1.5rem; }
 
-.logo {
-  max-width: 500px;
-  width: 100%; }
+.space {
+  height: 25px;
+  display: block; }
+
+.dspace {
+  height: 50px;
+  display: block; }
 
 .bg-black {
   background-color: #2B2E34; }
 
 .first-triangle {
   background: linear-gradient(#2B2E34 0%, #2B2E34 30%, white 30%, white 100%); }
+  .first-triangle .logo {
+    max-width: 500px;
+    width: 100%; }
 
 .sponsors p {
   margin-bottom: 75px; }
@@ -204,25 +211,33 @@ body {
     .sponsors a + a {
       margin-left: 0; } }
 
-.sponsors a[target]:hover {
-  background-color: inherit;
-  color: inherit; }
+.sponsors a[target] {
+  text-decoration: none; }
+  .sponsors a[target]:hover {
+    background-color: inherit;
+    color: inherit; }
+
+.sponsors figcaption {
+  max-width: 300px;
+  min-width: 100%; }
 
 .sponsor-image {
+  display: inline-block;
+  margin-bottom: 25px;
   width: 100%;
   max-width: 400px;
-  max-height: 170px;
-  min-width: 300px; }
+  min-width: 300px;
+  max-height: 170px; }
   .sponsor-image.medium {
     max-width: 330px;
-    max-height: 120px;
-    min-width: 280px; }
+    min-width: 280px;
+    max-height: 120px; }
   .sponsor-image.small {
     max-width: 150px;
     min-width: 130px; }
 
 .small {
-  font-size: 1.25rem; }
+  font-size: 80%; }
 
 .footer {
   display: -ms-flexbox;
