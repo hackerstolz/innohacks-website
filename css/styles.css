@@ -163,12 +163,25 @@
   padding: 0;
   margin: 0; }
 
+html {
+  font-size: inherit; }
+
 body {
   background-color: white;
   color: #2B2E34;
   font-family: Roboto, "Helvetica Neue", sans-serif;
   line-height: 1.5;
   font-size: 1.5rem; }
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  font-family: inherit;
+  font-weight: 600;
+  line-height: 1.5;
+  margin-top: 0;
+  color: inherit; }
+
+.h1, h1 {
+  font-size: 48px; }
 
 .space {
   height: 25px;
