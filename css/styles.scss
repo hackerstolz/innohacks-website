@@ -113,9 +113,9 @@ body {
     }
   }
 
-  /*.row {
+  .row {
     flex-wrap: wrap;
-  }*/
+  }
 
   figcaption {
     max-width: 300px;
@@ -148,6 +148,10 @@ body {
   max-width: 400px;
   min-width: 300px;
   max-height: 170px;
+
+  &.vector {
+    min-width: 400px;
+  }
 
   &.medium {
     max-width: 330px;

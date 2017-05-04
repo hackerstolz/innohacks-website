@@ -217,50 +217,57 @@ body {
   .first-triangle .triangle {
     padding-bottom: 100px; }
 
-.sponsors, .team {
-  /*.row {
-    flex-wrap: wrap;
-  }*/ }
-  .sponsors p, .team p {
-    margin-bottom: 75px; }
-  .sponsors div, .team div {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-        align-items: center;
-    -ms-flex-pack: center;
-        justify-content: center; }
-    .sponsors div + div, .team div + div {
-      margin-top: 75px; }
+.sponsors p, .team p {
+  margin-bottom: 75px; }
+
+.sponsors div, .team div {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  .sponsors div + div, .team div + div {
+    margin-top: 75px; }
+
+@media (max-width: 768px) {
+  .sponsors a, .team a {
+    margin-left: 25px;
+    margin-right: 25px; } }
+
+.sponsors a + a, .team a + a {
+  margin-left: 75px; }
   @media (max-width: 768px) {
-    .sponsors a, .team a {
-      margin-left: 25px;
-      margin-right: 25px; } }
-  .sponsors a + a, .team a + a {
-    margin-left: 75px; }
-    @media (max-width: 768px) {
-      .sponsors a + a, .team a + a {
-        margin-left: 0; } }
-  .sponsors a[target], .team a[target] {
-    text-decoration: none; }
-    .sponsors a[target]:hover, .team a[target]:hover {
-      background-color: inherit;
-      color: inherit; }
-  .sponsors figcaption, .team figcaption {
-    max-width: 300px;
-    min-width: 100%; }
-  .sponsors .row a:nth-child(odd) .fancy-border, .team .row a:nth-child(odd) .fancy-border {
-    transform: rotate(1deg);
-    will-change: transform;
-    transition: transform 0.133s ease-in-out; }
-    .sponsors .row a:nth-child(odd) .fancy-border:hover, .team .row a:nth-child(odd) .fancy-border:hover {
-      transform: rotate(-1deg); }
-  .sponsors .row a:nth-child(even) .fancy-border, .team .row a:nth-child(even) .fancy-border {
-    transform: rotate(-1deg);
-    will-change: transform;
-    transition: transform 0.133s ease-in-out; }
-    .sponsors .row a:nth-child(even) .fancy-border:hover, .team .row a:nth-child(even) .fancy-border:hover {
-      transform: rotate(1deg); }
+    .sponsors a + a, .team a + a {
+      margin-left: 0; } }
+
+.sponsors a[target], .team a[target] {
+  text-decoration: none; }
+  .sponsors a[target]:hover, .team a[target]:hover {
+    background-color: inherit;
+    color: inherit; }
+
+.sponsors .row, .team .row {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.sponsors figcaption, .team figcaption {
+  max-width: 300px;
+  min-width: 100%; }
+
+.sponsors .row a:nth-child(odd) .fancy-border, .team .row a:nth-child(odd) .fancy-border {
+  transform: rotate(1deg);
+  will-change: transform;
+  transition: transform 0.133s ease-in-out; }
+  .sponsors .row a:nth-child(odd) .fancy-border:hover, .team .row a:nth-child(odd) .fancy-border:hover {
+    transform: rotate(-1deg); }
+
+.sponsors .row a:nth-child(even) .fancy-border, .team .row a:nth-child(even) .fancy-border {
+  transform: rotate(-1deg);
+  will-change: transform;
+  transition: transform 0.133s ease-in-out; }
+  .sponsors .row a:nth-child(even) .fancy-border:hover, .team .row a:nth-child(even) .fancy-border:hover {
+    transform: rotate(1deg); }
 
 .sponsor-image, .team-image {
   display: inline-block;
@@ -268,6 +275,8 @@ body {
   max-width: 400px;
   min-width: 300px;
   max-height: 170px; }
+  .sponsor-image.vector, .team-image.vector {
+    min-width: 400px; }
   .sponsor-image.medium, .team-image.medium {
     max-width: 330px;
     min-width: 280px;
