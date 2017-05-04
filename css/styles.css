@@ -214,6 +214,8 @@ body {
   .first-triangle .logo {
     max-width: 500px;
     width: 100%; }
+  .first-triangle .triangle {
+    padding-bottom: 100px; }
 
 .sponsors, .team {
   /*.row {

@@ -68,6 +68,10 @@ body {
     max-width: 500px;
     width: 100%;
   }
+
+  .triangle {
+    padding-bottom: $gap * 4;
+  }
 }
 
 .sponsors, .team {
