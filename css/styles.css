@@ -250,10 +250,18 @@ body {
   line-height: 1; }
 
 .sponsors .row a:nth-child(odd) .fancy-border, .team .row a:nth-child(odd) .fancy-border {
-  transform: rotate(1deg); }
+  transform: rotate(1deg);
+  will-change: transform;
+  transition: transform 0.133s ease-in-out; }
+  .sponsors .row a:nth-child(odd) .fancy-border:hover, .team .row a:nth-child(odd) .fancy-border:hover {
+    transform: rotate(-1deg); }
 
 .sponsors .row a:nth-child(even) .fancy-border, .team .row a:nth-child(even) .fancy-border {
-  transform: rotate(-1deg); }
+  transform: rotate(-1deg);
+  will-change: transform;
+  transition: transform 0.133s ease-in-out; }
+  .sponsors .row a:nth-child(even) .fancy-border:hover, .team .row a:nth-child(even) .fancy-border:hover {
+    transform: rotate(1deg); }
 
 .sponsor-image, .team-image {
   display: inline-block;

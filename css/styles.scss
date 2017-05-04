@@ -116,9 +116,21 @@ body {
   
   .row a:nth-child(odd) .fancy-border {
     transform: rotate(1deg);
+    will-change: transform;
+    transition: transform 0.133s ease-in-out;
+
+    &:hover {
+      transform: rotate(-1deg);
+    }
   }
   .row a:nth-child(even) .fancy-border {
     transform: rotate(-1deg);
+    will-change: transform;
+    transition: transform 0.133s ease-in-out;
+
+    &:hover {
+      transform: rotate(1deg);
+    }
   }
 }
 
