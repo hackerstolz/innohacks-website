@@ -6,3 +6,7 @@ $gap: 25px;
 
 // Overwrites Roboto Font Path
 $FontPath: '../assets/fonts/';
+
+.top-gap {
+  margin-top: $gap;
+}

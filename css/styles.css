@@ -1,3 +1,6 @@
+.top-gap {
+  margin-top: 25px; }
+
 /* BEGIN Thin */
 @font-face {
   font-family: Roboto;
@@ -401,5 +404,4 @@ a {
   margin-top: 25px; }
 
 #sponsor {
-  display: none;
-}
+  display: none !important; }
