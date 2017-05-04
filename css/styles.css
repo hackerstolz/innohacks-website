@@ -399,3 +399,7 @@ a {
 
 .eventbrite, .slack-integration {
   margin-top: 25px; }
+
+#sponsor {
+  display: none;
+}
