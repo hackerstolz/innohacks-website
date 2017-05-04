@@ -209,64 +209,60 @@ body {
     text-decoration: none; }
 
 .first-triangle {
+  margin-top: 50px;
   background: linear-gradient(#2B2E34 0%, #2B2E34 30%, white 30%, white 100%); }
   .first-triangle .logo {
     max-width: 500px;
     width: 100%; }
 
-.sponsors p, .team p {
-  margin-bottom: 75px; }
-
-.sponsors div, .team div {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-pack: center;
-      justify-content: center; }
-  .sponsors div + div, .team div + div {
-    margin-top: 75px; }
-
-@media (max-width: 768px) {
-  .sponsors a, .team a {
-    margin-left: 25px;
-    margin-right: 25px; } }
-
-.sponsors a + a, .team a + a {
-  margin-left: 75px; }
+.sponsors, .team {
+  /*.row {
+    flex-wrap: wrap;
+  }*/ }
+  .sponsors p, .team p {
+    margin-bottom: 75px; }
+  .sponsors div, .team div {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center; }
+    .sponsors div + div, .team div + div {
+      margin-top: 75px; }
   @media (max-width: 768px) {
-    .sponsors a + a, .team a + a {
-      margin-left: 0; } }
-
-.sponsors a[target], .team a[target] {
-  text-decoration: none; }
-  .sponsors a[target]:hover, .team a[target]:hover {
-    background-color: inherit;
-    color: inherit; }
-
-.sponsors figcaption, .team figcaption {
-  max-width: 300px;
-  min-width: 100%;
-  line-height: 1; }
-
-.sponsors .row a:nth-child(odd) .fancy-border, .team .row a:nth-child(odd) .fancy-border {
-  transform: rotate(1deg);
-  will-change: transform;
-  transition: transform 0.133s ease-in-out; }
-  .sponsors .row a:nth-child(odd) .fancy-border:hover, .team .row a:nth-child(odd) .fancy-border:hover {
-    transform: rotate(-1deg); }
-
-.sponsors .row a:nth-child(even) .fancy-border, .team .row a:nth-child(even) .fancy-border {
-  transform: rotate(-1deg);
-  will-change: transform;
-  transition: transform 0.133s ease-in-out; }
-  .sponsors .row a:nth-child(even) .fancy-border:hover, .team .row a:nth-child(even) .fancy-border:hover {
-    transform: rotate(1deg); }
+    .sponsors a, .team a {
+      margin-left: 25px;
+      margin-right: 25px; } }
+  .sponsors a + a, .team a + a {
+    margin-left: 75px; }
+    @media (max-width: 768px) {
+      .sponsors a + a, .team a + a {
+        margin-left: 0; } }
+  .sponsors a[target], .team a[target] {
+    text-decoration: none; }
+    .sponsors a[target]:hover, .team a[target]:hover {
+      background-color: inherit;
+      color: inherit; }
+  .sponsors figcaption, .team figcaption {
+    max-width: 300px;
+    min-width: 100%; }
+  .sponsors .row a:nth-child(odd) .fancy-border, .team .row a:nth-child(odd) .fancy-border {
+    transform: rotate(1deg);
+    will-change: transform;
+    transition: transform 0.133s ease-in-out; }
+    .sponsors .row a:nth-child(odd) .fancy-border:hover, .team .row a:nth-child(odd) .fancy-border:hover {
+      transform: rotate(-1deg); }
+  .sponsors .row a:nth-child(even) .fancy-border, .team .row a:nth-child(even) .fancy-border {
+    transform: rotate(-1deg);
+    will-change: transform;
+    transition: transform 0.133s ease-in-out; }
+    .sponsors .row a:nth-child(even) .fancy-border:hover, .team .row a:nth-child(even) .fancy-border:hover {
+      transform: rotate(1deg); }
 
 .sponsor-image, .team-image {
   display: inline-block;
   margin-bottom: 25px;
-  width: 100%;
   max-width: 400px;
   min-width: 300px;
   max-height: 170px; }
@@ -380,6 +376,10 @@ a {
   .content {
     padding: 50px 15vw; } }
 
+@media (min-width: 768px) {
+  .navbar-right {
+    margin-right: 0; } }
+
 @media (max-width: 767px) {
   .fact-container {
     -ms-flex-wrap: wrap;
@@ -413,3 +413,12 @@ a {
 
 #sponsor {
   display: none !important; }
+
+body .navbar-brand {
+  line-height: inherit;
+  padding: 0;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-align: center;
+      align-items: center;
+  margin-left: 15px; }

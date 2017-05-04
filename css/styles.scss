@@ -61,6 +61,7 @@ body {
 }
 
 .first-triangle {
+  margin-top: $gap * 2;
   background: linear-gradient($background-color 0%, $background-color 30%, white 30%, white 100%);
   
   .logo {
@@ -107,11 +108,14 @@ body {
       }
     }
   }
-  
+
+  /*.row {
+    flex-wrap: wrap;
+  }*/
+
   figcaption {
     max-width: 300px;
     min-width: 100%;
-    line-height: 1;
   }
   
   .row a:nth-child(odd) .fancy-border {
@@ -137,7 +141,6 @@ body {
 .sponsor-image, .team-image {
   display: inline-block;
   margin-bottom: $gap;
-  width: 100%;
   max-width: 400px;
   min-width: 300px;
   max-height: 170px;
@@ -306,6 +309,12 @@ a {
   }
 }
 
+@include media('>=tablet') {
+  .navbar-right {
+    margin-right: 0;
+  }
+}
+
 @include media('<tablet') {
   .fact-container {
     flex-wrap: wrap;
@@ -347,4 +356,14 @@ a {
 
 #sponsor {
   display: none !important;
+}
+
+body {
+  .navbar-brand {
+    line-height: inherit;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    margin-left: 15px;
+  }
 }
