@@ -48,6 +48,10 @@ body {
   font-size: 80%;
 }
 
+.strong {
+  font-weight: 900;
+}
+
 .bg-black {
   background-color: $background-color;
 }
@@ -120,6 +124,7 @@ body {
   figcaption {
     max-width: 300px;
     min-width: 100%;
+    margin-bottom: 40px;
   }
   
   .row a:nth-child(odd) .fancy-border {
