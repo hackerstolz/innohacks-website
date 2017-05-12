@@ -4,9 +4,10 @@ $background-color: #2B2E34;
 $primary-color: #FED74C;
 $gap: 25px;
 
-// Overwrites Roboto Font Path
-$FontPath: '../assets/fonts/';
-
 .top-gap {
   margin-top: $gap;
+}
+
+.double-top-gap {
+  margin-top: $gap * 2;
 }

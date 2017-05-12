@@ -1,6 +1,9 @@
 .top-gap {
   margin-top: 25px; }
 
+.double-top-gap {
+  margin-top: 50px; }
+
 .triangle {
   text-align: center;
   position: relative; }
@@ -92,7 +95,6 @@ body {
     text-decoration: none; }
 
 .first-triangle {
-  margin-top: 50px;
   background: linear-gradient(#2B2E34 0%, #2B2E34 30%, white 30%, white 100%); }
   .first-triangle .logo {
     max-width: 500px;
