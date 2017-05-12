@@ -80,6 +80,9 @@ body {
 .small {
   font-size: 80%; }
 
+.strong {
+  font-weight: 900; }
+
 .bg-black {
   background-color: #2B2E34; }
 
@@ -133,7 +136,8 @@ body {
 
 .sponsors figcaption, .team figcaption {
   max-width: 300px;
-  min-width: 100%; }
+  min-width: 100%;
+  margin-bottom: 40px; }
 
 .sponsors .row a:nth-child(odd) .fancy-border, .team .row a:nth-child(odd) .fancy-border {
   transform: rotate(1deg);
