@@ -1,5 +1,4 @@
 @import '_utilities';
-@import 'roboto/roboto';
 @import '_rectangles';
 
 * {
@@ -17,7 +16,7 @@ html {
 body {
   background-color: white;
   color: $background-color;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-family: "Roboto Condensed", "Helvetica Neue", sans-serif;
   line-height: 1.5;
   font-size: 1.5rem;
   position: relative;
