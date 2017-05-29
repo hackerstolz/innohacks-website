@@ -28,6 +28,8 @@
     
     <link href="css/styles.css?v1" rel="stylesheet"/>
     <link href="css/flipclock.css?v1" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/photoswipe.css">
+    <link rel="stylesheet" href="assets/photoswipe-skin/default-skin.css">
     
     <link rel="icon" type="image/png" href="assets/favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400i,700" rel="stylesheet">
@@ -102,10 +104,49 @@
             </div>
         </div>
 
-        <div id="flickrembed"></div>
-        <small style="display: block; text-align: center; margin: 0 auto; font-size: 10px"><br/>Powered by <a
-                href="https://flickrembed.com">flickr embed</a>.
-        </small>
+        <div class="photo-thumbnails" itemscope itemtype="http://schema.org/ImageGallery">
+        </div>
+
+        <!-- 
+            Following code marks creates opened photo gallery 
+            Dokumentation: http://photoswipe.com/documentation/getting-started.html
+        -->
+        <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="pswp__bg"></div>
+            <div class="pswp__scroll-wrap">
+                <div class="pswp__container">
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                </div>
+                <div class="pswp__ui pswp__ui--hidden">
+                    <div class="pswp__top-bar">
+                        <div class="pswp__counter"></div>
+                        <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                        <button class="pswp__button pswp__button--share" title="Share"></button>
+                        <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                        <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                        <div class="pswp__preloader">
+                            <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                        <div class="pswp__share-tooltip"></div> 
+                    </div>
+                    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                    </button>
+                    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                    </button>
+                    <div class="pswp__caption">
+                        <div class="pswp__caption__center"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <div class="triangle content faq inverse yellow" id="faq">
@@ -323,18 +364,20 @@
         ga('send', 'pageview');
     </script>
 
-    <script src="js/jquery-3.2.0.min.js?v1"></script>
+    <script src="js/jquery-3.2.0.min.js?v1"></script>       <!-- jQuery base library -->
     <script src="js/flipclock.min.js?v1"></script>
     <script src="js/moment.min.js?v1"></script>
     <script src="js/countdown.js?v2"></script>
-    <script src="js/smooth-scroll.min.js"></script>
+    <script src="js/smooth-scroll.min.js"></script>         <!-- Improve scroll to internal anchor -->
+    <script src="js/photoswipe.min.js"></script>            <!-- Controller for photo gallery -->
+    <script src="js/photoswipe-ui-default.min.js"></script> <!-- Skin for photo gallery -->
 
     <script>
         smoothScroll.init();
     </script>
     
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="//flickrembed.com/embed_v2.js.php?source=flickr&layout=responsive&input=www.flickr.com/photos/hackerstolz/albums/72157670643144205&sort=0&by=album&theme=tilesgrid&scale=fill&skin=default-light&id=58fe605d444f2"></script>
     
+    <script src="js/photoswipe-gallery.js"></script> <!-- Fills photo gallery with pictures -->
 </body>
 </html>

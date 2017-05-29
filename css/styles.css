@@ -202,6 +202,19 @@ a {
   color: #2B2E34;
   text-decoration: underline; }
 
+.photo-thumbnails figure {
+  max-width: 200px;
+  box-shadow: 2px 1px 5px 1px rgba(0, 0, 0, 0.5);
+  padding: 2px;
+  border-radius: 2px;
+  margin: 7px;
+  display: inline-block;
+  transition: opacity 0.2s; }
+  .photo-thumbnails figure:hover {
+    opacity: 0.7; }
+  .photo-thumbnails figure img {
+    max-width: 100%; }
+
 .faq .question {
   font-weight: bold;
   margin-top: 30px; }
