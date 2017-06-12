@@ -163,6 +163,8 @@ body {
   max-height: 170px; }
   .sponsor-image.vector, .team-image.vector {
     min-width: 400px; }
+  .sponsor-image.fiducia, .team-image.fiducia {
+    min-width: 150px !important; }
   .sponsor-image.medium, .team-image.medium {
     max-width: 330px;
     min-width: 280px;
@@ -314,9 +316,6 @@ a {
       margin-top: -14px;
       font-weight: bold;
       font-size: 60px; }
-
-.ug-textpanel-title {
-  display: none !important; }
 
 .eventbrite, .slack-integration {
   margin-top: 25px; }

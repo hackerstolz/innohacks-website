@@ -158,6 +158,10 @@ body {
     min-width: 400px;
   }
 
+  &.fiducia {
+    min-width: 150px !important;
+  }
+
   &.medium {
     max-width: 330px;
     min-width: 280px;
@@ -376,11 +380,6 @@ a {
       font-size: 60px;
     }
   }
-}
-
-// flickr embed
-.ug-textpanel-title {
-  display: none !important;
 }
 
 .eventbrite, .slack-integration {
