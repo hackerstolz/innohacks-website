@@ -33,24 +33,6 @@ body {
     font-size: 48px;
 }
 
-.space {
-  height: $gap;
-  display: block;
-}
-
-.dspace {
-  height: 2 * $gap;
-  display: block;
-}
-
-.small {
-  font-size: 80%;
-}
-
-.strong {
-  font-weight: 900;
-}
-
 .bg-black {
   background-color: $background-color;
 }
@@ -62,7 +44,6 @@ body {
     text-decoration: none;
   }
 }
-
 
 
 .first-triangle {
@@ -180,12 +161,6 @@ body {
     min-width: inherit;
     max-height: inherit;
     min-height: inherit;
-  }
-  
-  &.fancy-border {
-    padding: 15px;
-    background-color: white;
-    box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
   }
 }
 
@@ -329,6 +304,39 @@ a {
 
     .flip-clock-wrapper {
       margin: 0;
+    }
+  }
+}
+
+.location {
+  .card {
+    width: 49%;
+    min-width: 320px;
+
+    p {
+      text-align: left;
+      display: inline-block;
+    }
+  }
+}
+
+.event {
+  .card {
+    width: 30%;
+    min-width: 200px;
+    vertical-align: top;
+
+    h4 {
+      margin-top: -15px;
+    }
+
+    span {
+      display: block;
+
+      &.time {
+          font-size: 80%;
+          font-weight: bold;
+      }
     }
   }
 }

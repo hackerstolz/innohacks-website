@@ -11,3 +11,49 @@ $gap: 25px;
 .double-top-gap {
   margin-top: $gap * 2;
 }
+
+.bottom-gap {
+  margin-bottom: $gap;
+}
+
+.space {
+  height: $gap;
+  display: block;
+}
+
+.dspace {
+  height: 2 * $gap;
+  display: block;
+}
+
+.small {
+  font-size: 80%;
+}
+
+.strong {
+  font-weight: 900;
+}
+
+img {
+  &.landscape {
+    max-width: 920px;
+    width: 90%;
+    height: auto;
+  }
+  
+  &.fancy-border {
+    padding: 15px;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+  }
+}
+
+.card-wrapper {
+  .card {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+  }
+}
+
+

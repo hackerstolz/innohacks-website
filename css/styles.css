@@ -4,6 +4,38 @@
 .double-top-gap {
   margin-top: 50px; }
 
+.bottom-gap {
+  margin-bottom: 25px; }
+
+.space {
+  height: 25px;
+  display: block; }
+
+.dspace {
+  height: 50px;
+  display: block; }
+
+.small {
+  font-size: 80%; }
+
+.strong {
+  font-weight: 900; }
+
+img.landscape {
+  max-width: 920px;
+  width: 90%;
+  height: auto; }
+
+img.fancy-border {
+  padding: 15px;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4); }
+
+.card-wrapper .card {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle; }
+
 .triangle {
   text-align: center;
   position: relative; }
@@ -71,20 +103,6 @@ body {
 
 .h1, h1 {
   font-size: 48px; }
-
-.space {
-  height: 25px;
-  display: block; }
-
-.dspace {
-  height: 50px;
-  display: block; }
-
-.small {
-  font-size: 80%; }
-
-.strong {
-  font-weight: 900; }
 
 .bg-black {
   background-color: #2B2E34; }
@@ -179,10 +197,6 @@ body {
     min-width: inherit;
     max-height: inherit;
     min-height: inherit; }
-  .sponsor-image.fancy-border, .team-image.fancy-border {
-    padding: 15px;
-    background-color: white;
-    box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4); }
 
 .footer {
   display: -ms-flexbox;
@@ -279,6 +293,25 @@ a {
       right: -4.1rem; }
     .clock .flip-clock-wrapper {
       margin: 0; } }
+
+.location .card {
+  width: 49%;
+  min-width: 320px; }
+  .location .card p {
+    text-align: left;
+    display: inline-block; }
+
+.event .card {
+  width: 30%;
+  min-width: 200px;
+  vertical-align: top; }
+  .event .card h4 {
+    margin-top: -15px; }
+  .event .card span {
+    display: block; }
+    .event .card span.time {
+      font-size: 80%;
+      font-weight: bold; }
 
 .coc table {
   display: inline-block;
