@@ -120,77 +120,85 @@ body {
   .first-triangle .triangle {
     padding-bottom: 100px; }
 
-.sponsors p, .team p {
+.sponsors p, .team p, .mentors p {
   margin-bottom: 75px; }
 
-.sponsors div, .team div {
+.sponsors div, .team div, .mentors div {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
       align-items: center;
   -ms-flex-pack: center;
       justify-content: center; }
-  .sponsors div + div, .team div + div {
+  .sponsors div + div, .team div + div, .mentors div + div {
     margin-top: 75px; }
 
 @media (max-width: 768px) {
-  .sponsors a, .team a {
+  .sponsors a, .team a, .mentors a {
     margin-left: 25px;
     margin-right: 25px; } }
 
-.sponsors a + a, .team a + a {
+.sponsors a + a, .team a + a, .mentors a + a {
   margin-left: 75px; }
   @media (max-width: 768px) {
-    .sponsors a + a, .team a + a {
+    .sponsors a + a, .team a + a, .mentors a + a {
       margin-left: 0; } }
 
-.sponsors a[target], .team a[target] {
+.sponsors a[target], .team a[target], .mentors a[target] {
   text-decoration: none; }
-  .sponsors a[target]:hover, .team a[target]:hover {
+  .sponsors a[target]:hover, .team a[target]:hover, .mentors a[target]:hover {
     background-color: inherit;
     color: inherit; }
 
-.sponsors .row, .team .row {
+.sponsors .row, .team .row, .mentors .row {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
 
-.sponsors figcaption, .team figcaption {
+.sponsors figcaption, .team figcaption, .mentors figcaption {
   max-width: 300px;
   min-width: 100%;
   margin-bottom: 40px; }
 
-.sponsors .row a:nth-child(odd) .fancy-border, .team .row a:nth-child(odd) .fancy-border {
+.sponsors .row a:nth-child(odd) .fancy-border, .team .row a:nth-child(odd) .fancy-border, .mentors .row a:nth-child(odd) .fancy-border {
   transform: rotate(1deg);
   will-change: transform;
   transition: transform 0.133s ease-in-out; }
-  .sponsors .row a:nth-child(odd) .fancy-border:hover, .team .row a:nth-child(odd) .fancy-border:hover {
+  .sponsors .row a:nth-child(odd) .fancy-border:hover, .team .row a:nth-child(odd) .fancy-border:hover, .mentors .row a:nth-child(odd) .fancy-border:hover {
     transform: rotate(-1deg); }
 
-.sponsors .row a:nth-child(even) .fancy-border, .team .row a:nth-child(even) .fancy-border {
+.sponsors .row a:nth-child(even) .fancy-border, .team .row a:nth-child(even) .fancy-border, .mentors .row a:nth-child(even) .fancy-border {
   transform: rotate(-1deg);
   will-change: transform;
   transition: transform 0.133s ease-in-out; }
-  .sponsors .row a:nth-child(even) .fancy-border:hover, .team .row a:nth-child(even) .fancy-border:hover {
+  .sponsors .row a:nth-child(even) .fancy-border:hover, .team .row a:nth-child(even) .fancy-border:hover, .mentors .row a:nth-child(even) .fancy-border:hover {
     transform: rotate(1deg); }
 
-.sponsor-image, .team-image {
+.sponsor-image, .team-image, .mentor-image {
   display: inline-block;
   margin-bottom: 25px;
   max-width: 400px;
   min-width: 300px;
   max-height: 170px; }
-  .sponsor-image.vector, .team-image.vector {
+  .sponsor-image.vector, .team-image.vector, .mentor-image.vector {
     min-width: 400px; }
-  .sponsor-image.fiducia, .team-image.fiducia {
+  .sponsor-image.fiducia, .team-image.fiducia, .mentor-image.fiducia {
     min-width: 150px !important; }
-  .sponsor-image.medium, .team-image.medium {
+  .sponsor-image.medium, .team-image.medium, .mentor-image.medium {
     max-width: 330px;
     min-width: 280px;
     max-height: 120px; }
-  .sponsor-image.small, .team-image.small {
+  .sponsor-image.small, .team-image.small, .mentor-image.small {
     max-width: 150px;
     min-width: 130px; }
-  .sponsor-image.square, .team-image.square {
+  .sponsor-image.square, .team-image.square, .mentor-image.square {
+    width: 220px;
+    height: 220px;
+    max-width: inherit;
+    min-width: inherit;
+    max-height: inherit;
+    min-height: inherit; }
+  .sponsor-image.round, .team-image.round, .mentor-image.round {
+    border-radius: 50%;
     width: 220px;
     height: 220px;
     max-width: inherit;
@@ -203,6 +211,7 @@ body {
   display: flex;
   padding: 0 25px;
   font-size: 1rem;
+  margin-bottom: 15px;
   -ms-flex-pack: justify;
       justify-content: space-between;
   -ms-flex-align: center;
@@ -213,6 +222,39 @@ body {
     width: 100%; }
   .footer a {
     text-decoration: none; }
+
+.mentors a {
+  display: block; }
+  .mentors a + a {
+    margin-top: 25px;
+    margin-left: 0; }
+
+.mentors figure {
+  display: -ms-flexbox;
+  display: flex; }
+  .mentors figure img {
+    margin: 0; }
+  .mentors figure figcaption {
+    margin-left: 25px;
+    text-align: left;
+    margin-bottom: 0;
+    min-width: inherit;
+    max-width: inherit;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center; }
+    .mentors figure figcaption .mentor-properties {
+      font-style: italic;
+      margin-bottom: 25px; }
+    .mentors figure figcaption .bio {
+      margin: 0; }
+
+@media (max-width: 1023px) {
+  .mentors figure {
+    display: block; }
+    .mentors figure figcaption {
+      margin-top: 25px;
+      text-align: center; } }
 
 a {
   color: #2B2E34;

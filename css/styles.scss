@@ -59,7 +59,7 @@ body {
   }
 }
 
-.sponsors, .team {
+.sponsors, .team, .mentors {
   p {
     margin-bottom: 3 * $gap;
   }
@@ -128,7 +128,7 @@ body {
   }
 }
 
-.sponsor-image, .team-image {
+.sponsor-image, .team-image, .mentor-image {
   display: inline-block;
   margin-bottom: $gap;
   max-width: 400px;
@@ -162,12 +162,23 @@ body {
     max-height: inherit;
     min-height: inherit;
   }
+
+  &.round {
+    border-radius: 50%;
+    width: 220px;
+    height: 220px;
+    max-width: inherit;
+    min-width: inherit;
+    max-height: inherit;
+    min-height: inherit;
+  }
 }
 
 .footer {
   display: flex;
   padding: 0 $gap;
   font-size: 1rem;
+  margin-bottom: 15px;
 
   justify-content: space-between;
   align-items: center;
@@ -180,6 +191,56 @@ body {
 
   a {
     text-decoration: none;
+  }
+}
+
+.mentors {
+  a {
+    display: block;
+
+    + a {
+      margin-top: $gap;
+      margin-left: 0;
+    }
+  }
+
+  figure {
+    display: flex;
+
+    img {
+      margin: 0;
+    }
+
+    figcaption {
+      margin-left: $gap;
+      text-align: left;
+      margin-bottom: 0;
+      min-width: inherit;
+      max-width: inherit;
+      align-self: center;
+
+      .mentor-properties {
+        font-style: italic;
+        margin-bottom: $gap;
+      }
+
+      .bio {
+        margin: 0;
+      }
+    }
+  }
+}
+
+@include media('<desktop') {
+  .mentors {
+    figure {
+      display: block;
+
+      figcaption {
+        margin-top: $gap;
+        text-align: center;
+      }
+    }
   }
 }
 
