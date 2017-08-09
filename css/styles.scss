@@ -25,12 +25,13 @@ body {
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
     font-family: inherit;
     font-weight: 600;
-    line-height: 1.5;
+    line-height: 1.1;
     margin-top: 0;
     color: inherit;
 }
 .h1, h1 {
     font-size: 48px;
+    margin-bottom: 0.8em;
 }
 
 .bg-black {
@@ -290,7 +291,6 @@ a {
 .clock {
   h1 {
     font-size: 4rem;
-    margin-bottom: $gap;
   }
 
   .flip-clock-wrapper {
@@ -388,7 +388,7 @@ a {
     vertical-align: top;
 
     h4 {
-      margin-top: -15px;
+      margin-top: -10px;
     }
 
     span {
@@ -457,6 +457,29 @@ a {
 
 #sponsor {
   display: none !important;
+}
+
+.video-wrapper {
+  width: 560px;
+  max-width: 90%;
+  display: inline-block;
+  position: relative;
+
+  &:after {
+    padding-top: 56.25%;
+    display: block;
+    content: '';
+  }
+
+  .video {
+    position: absolute;
+    top: 0; 
+    right: 0; 
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 body {
