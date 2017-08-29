@@ -129,6 +129,10 @@ body {
   }
 }
 
+.mentor-image {
+  flex-shrink: 0;
+}
+
 .sponsor-image, .team-image, .mentor-image {
   display: inline-block;
   margin-bottom: $gap;
