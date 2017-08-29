@@ -148,6 +148,11 @@ body {
     min-width: 150px !important;
   }
 
+  &.smarthouse {
+    max-width: 200px !important;
+    min-width: 200px !important;
+  }
+
   &.medium {
     max-width: 330px;
     min-width: 280px;

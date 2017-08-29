@@ -188,6 +188,9 @@ body {
     min-width: 400px; }
   .sponsor-image.fiducia, .team-image.fiducia, .mentor-image.fiducia {
     min-width: 150px !important; }
+  .sponsor-image.smarthouse, .team-image.smarthouse, .mentor-image.smarthouse {
+    max-width: 200px !important;
+    min-width: 200px !important; }
   .sponsor-image.medium, .team-image.medium, .mentor-image.medium {
     max-width: 330px;
     min-width: 280px;
