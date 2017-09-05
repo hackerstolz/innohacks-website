@@ -178,6 +178,9 @@ body {
   -ms-flex-negative: 0;
       flex-shrink: 0; }
 
+.team p.small {
+  margin-bottom: 0; }
+
 .sponsor-image, .team-image, .mentor-image {
   display: inline-block;
   margin-bottom: 25px;
@@ -213,6 +216,28 @@ body {
     min-width: inherit;
     max-height: inherit;
     min-height: inherit; }
+
+.prizes .row {
+  margin-top: 50px;
+  display: -ms-flexbox;
+  display: flex; }
+  @media (max-width: 1023px) {
+    .prizes .row {
+      display: block; }
+      .prizes .row div {
+        display: block; }
+        .prizes .row div.icon-and-text + div {
+          margin-top: 50px;
+          padding-left: 0; } }
+  .prizes .row div {
+    -ms-flex: 1;
+        flex: 1; }
+    .prizes .row div + div {
+      padding-left: 25px; }
+  .prizes .row img {
+    max-height: 100px; }
+  .prizes .row b {
+    display: block; }
 
 .footer {
   display: -ms-flexbox;

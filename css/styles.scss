@@ -8,9 +8,9 @@
 }
 
 html {
-    box-sizing: border-box;
-    font-size: inherit;
-    overflow-x: hidden;
+  box-sizing: border-box;
+  font-size: inherit;
+  overflow-x: hidden;
 }
 
 body {
@@ -23,15 +23,16 @@ body {
 }
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-    font-family: inherit;
-    font-weight: 600;
-    line-height: 1.1;
-    margin-top: 0;
-    color: inherit;
+  font-family: inherit;
+  font-weight: 600;
+  line-height: 1.1;
+  margin-top: 0;
+  color: inherit;
 }
+
 .h1, h1 {
-    font-size: 48px;
-    margin-bottom: 0.8em;
+  font-size: 48px;
+  margin-bottom: 0.8em;
 }
 
 .bg-black {
@@ -40,16 +41,15 @@ body {
 
 .navbar {
   font-size: 80%;
-  
+
   a {
     text-decoration: none;
   }
 }
 
-
 .first-triangle {
   background: linear-gradient($background-color 0%, $background-color 30%, white 30%, white 100%);
-  
+
   .logo {
     max-width: 500px;
     width: 100%;
@@ -88,10 +88,10 @@ body {
         margin-left: 0;
       }
     }
-    
+
     &[target] {
       text-decoration: none;
-    
+
       &:hover {
         background-color: inherit;
         color: inherit;
@@ -108,7 +108,7 @@ body {
     min-width: 100%;
     margin-bottom: 40px;
   }
-  
+
   .row a:nth-child(odd) .fancy-border {
     transform: rotate(1deg);
     will-change: transform;
@@ -131,6 +131,14 @@ body {
 
 .mentor-image {
   flex-shrink: 0;
+}
+
+.team {
+  p {
+    &.small {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .sponsor-image, .team-image, .mentor-image {
@@ -163,7 +171,7 @@ body {
     max-width: 150px;
     min-width: 130px;
   }
-  
+
   &.square {
     width: 220px;
     height: 220px;
@@ -181,6 +189,44 @@ body {
     min-width: inherit;
     max-height: inherit;
     min-height: inherit;
+  }
+}
+
+.prizes {
+  .row {
+    margin-top: $gap * 2;
+    display: flex;
+
+    @include media('<desktop') {
+      display: block;
+
+      div {
+        display: block;
+
+        &.icon-and-text {
+          + div {
+            margin-top: $gap * 2;
+            padding-left: 0;
+          }
+        }
+      }
+    }
+
+    div {
+      flex: 1;
+
+      + div {
+        padding-left: $gap;
+      }
+    }
+
+    img {
+      max-height: 100px;
+    }
+
+    b {
+      display: block;
+    }
   }
 }
 
@@ -284,16 +330,16 @@ a {
     font-weight: bold;
     margin-top: 30px;
   }
-  
+
   @include media('>tablet') {
-      p:nth-child(4n+0), p:nth-child(4n+1) {
-        text-align: right;
-        padding-left: 30%;
-      }
-      p:nth-child(4n+2), p:nth-child(4n+3) {
-        text-align: left;
-        padding-right: 30%;
-      }
+    p:nth-child(4n+0), p:nth-child(4n+1) {
+      text-align: right;
+      padding-left: 30%;
+    }
+    p:nth-child(4n+2), p:nth-child(4n+3) {
+      text-align: left;
+      padding-right: 30%;
+    }
   }
 }
 
@@ -404,8 +450,8 @@ a {
       display: block;
 
       &.time {
-          font-size: 80%;
-          font-weight: bold;
+        font-size: 80%;
+        font-weight: bold;
       }
     }
   }
@@ -482,8 +528,8 @@ a {
 
   .video {
     position: absolute;
-    top: 0; 
-    right: 0; 
+    top: 0;
+    right: 0;
     bottom: 0;
     left: 0;
     width: 100%;
