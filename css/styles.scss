@@ -200,17 +200,20 @@ body {
   .row {
     margin-top: $gap * 2;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
     @include media('<desktop') {
       display: block;
 
       div {
         display: block;
+        min-width: 100% !important;
+        max-width: 100% !important;
 
         &.icon-and-text {
           + div {
             margin-top: $gap * 2;
-            padding-left: 0;
           }
         }
       }
@@ -218,10 +221,8 @@ body {
 
     div {
       flex: 1;
-
-      + div {
-        padding-left: $gap;
-      }
+      min-width: 45%;
+      max-width: 45%;
     }
 
     img {
