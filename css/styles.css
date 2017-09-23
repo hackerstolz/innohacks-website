@@ -18,6 +18,9 @@
 .small {
   font-size: 80%; }
 
+.very-small {
+  font-size: 60%; }
+
 .strong {
   font-weight: 900; }
 
@@ -179,6 +182,9 @@ body {
       flex-shrink: 0; }
 
 .team p.small {
+  margin-bottom: 0; }
+
+.team p.very-small {
   margin-bottom: 0; }
 
 .sponsor-image, .team-image, .mentor-image {
